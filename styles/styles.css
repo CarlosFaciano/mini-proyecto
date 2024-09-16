@@ -1,0 +1,192 @@
+
+
+h1{
+    font-family: "Roboto", sans-serif;
+}
+p{
+    font-family: "Roboto", sans-serif;
+    
+}
+ul > li{
+    font-family: "Roboto", sans-serif;
+}
+ul > li{
+    list-style: none;
+    
+}
+.email{
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+div > button{
+  
+    background-color: #232742 ;
+    color: white;
+}
+.items{
+    align-items: start;
+}
+.matters{
+    padding-left: 2.1rem;
+}
+.success{
+    padding-left: 2.1rem;
+}
+.dismiss_message{
+    margin-top: 27rem;
+}
+.modal_1{
+    display: none;
+}
+
+
+
+#mobile_success{
+    /* margin-bottom: 18rem; */
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+#mobile_success_container{
+    background-color: #232742 !important;
+}
+
+/* desktop design */
+body {
+    background-color: #37384e;
+}
+
+.card_container {
+    height: 85%;
+    border-radius: 2rem;
+}
+
+.contenido{
+    width: 60%;
+}
+
+.h1_desktop_design {
+    margin-top: 5rem;
+    color: #242740;
+    font-size: 3.3rem;
+    margin-left: 4rem;
+}
+
+.p_desktop_design{
+    color: #3e3f4a;
+    margin-left: 4rem;
+}
+
+.texto {
+    color: #40414d;
+    font-size: 1rem;
+    margin-left: 4rem;
+}
+
+.texto2 {
+    color: #40414d;
+     margin-left: 4rem; 
+    font-size: 1rem;
+}
+
+.texto3 {
+    color: #40414d;
+     margin-left: 4rem;
+       font-size: 1rem;
+}
+
+.email_desktop_dessign {
+  font-size: 1rem;
+  margin-left: 4rem;
+}
+
+.input_desktop_dessign {
+    margin-left: 4rem;
+    box-shadow: rgba(173, 164, 164, 0.16) 0px 10px 36px 0px, rgba(97, 85, 85, 0.06) 0px 0px 0px 1px;
+    border: solid 1px gray;
+    width: 70%;
+}
+
+.boton_desktop {
+    background-color: #232744;
+    color: white;
+    margin-left: 4rem;
+    width: 70%;
+    margin-bottom: 5rem;
+    border: solid 1px  #232744;
+}
+.invalid{
+    font-size: 12px;
+    color: red;
+    margin-left: 8rem;
+}
+.invalid_mobile{
+    font-size: 12px;
+    color: red;
+    margin-left: 8rem;
+}
+.invalido{
+    background-color: rgba(255, 0, 0, 0.132);
+    border: solid 2px rgba(255, 0, 0, 0.405);
+    color: red;
+    width: 70%;
+    margin-left: 4rem;
+    outline: red;
+    
+}
+.invalido_1{
+    background-color: rgba(255, 0, 0, 0.132);
+    border: solid 2px rgba(255, 0, 0, 0.405);
+    color: red;
+    outline: red;
+    
+}
+/* desktop success */
+.card {
+    background-color: #36384d;
+}
+
+/* .modal_2 {
+    opacity: 0;
+} */
+.card_cuerpo{
+    border-radius: 20px;
+    height: 55%;
+}
+
+.icon {
+    height: 10%;
+}
+
+.subscribe {
+    font-family: "Roboto", sans-serif;
+    color: #232742
+}
+
+.p_desktop_success {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem;
+}
+
+.boton_desktop_success {
+    background-color: #232742;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    padding: 0.6rem;
+    border:solid 1px #232742;
+}
+.desktop_success{
+    color:#232742;;
+    position:absolute;
+    top: 0;
+    left: 0;
+    
+}
+@media (min-width:1440px){
+    main{
+        background-color: #37384e !important;
+
+
+    }
+   
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script defer src="./main.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+
+<body>
+  <main class="w-100 vh-100 ">
+    <!-- mobile design -->
+    <section class="w-100 vh-100 d-xxl-none overflow-hidden">
+      <div class="container vh-100 w-100 mobile_design ps-0" >
+        <a class="ms-0 ps-0"href="">
+          <img class=" vw-100 ms-0 " src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+        </a>
+        <div class="words_container ps-3">
+          <h1 class="pt-4 fw-bold">Stay updated!</h1>
+          <p>
+
+            Join 60,000+ product managers receiving <br> monthly updates on:
+          </p>
+          <p>
+          <h5 class="fs-6 mb-3 fw-normal">
+            <img class="pe-2" src="./assets/images/icon-list.svg" alt="">
+            Product discovery and building what <br> <span class="matters"> matters</span>
+          </h5>
+          <h5 class="fs-6 mb-3 fw-normal">
+            <img class="pe-2" src="./assets/images/icon-list.svg" alt="">
+            Measuring to ensure updates are a <br> <span class="success">success </span>
+          </h5>
+          <h5 class="fs-6 mb-3 fw-normal">
+            <img class="pe-2" src="./assets/images/icon-list.svg" alt="">
+            And much more!
+          </h5>
+          </p>
+          <p class="email mt-5">
+            Email address <span class="invalid_mobile d-none">Valid email request</span>
+          </p>
+          <div class="">
+            <input class="mb-4 d-flex  rounded p-3 w-100 input_mobile" id="input_mobile"placeholder="email@company.com">
+          </div>
+          <div class=" ">
+            <button class=" p-3 rounded w-100 button_modal" id="button_modal">Subscribe to monthly newsletter</button>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- mobile success -->
+    <section class="">
+      <div class="container mobile_success vh-100 w-100 d-none d-xxl-none" id="mobile_success">
+          <div class="message_container vh-100 w-100 overflow-hidden d-flex flex-column  ">
+              <h1 class="">
+                  <img class="mt-5 ms-3 mb-4" src="./assets/images/icon-success.svg" alt="">
+              </h1>
+              <h1 class="ms-3 fw-bolder lh-1 mb-3">Thanks for <br>subscribing!
+
+              </h1>
+              <p class="ms-3">A confirmation email has been sent to <span class="fw-bold" id="correo_success_mobile"></span> Please open it and <br> click the button inside to confirm your <br> subscription.</p>
+              <div class="btn">
+                  <button class="w-100  me-3 p-3 rounded  dismiss_message">Dismiss message</button>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- desktop design -->
+  <section>
+    <div class="container_desktop  w-100 vh-100 d-flex justify-content-center align-content-center d-none d-xxl-block">
+        <div class="card_container  bg-white d-flex flex-column contenido ms-auto me-auto  ">
+            <div class="d-flex justify-content-end w-100">
+                <div class="d-flex flex-column w-100 words">
+                    <h1 class=" stay fw-bolder mb-4 h1_desktop_design">Stay updated!</h1>
+                    <p class="mb-4 p_desktop_design">Join 60,000+ product managers receiving monthly <br> updates on:</p>
+                    <h5 class="texto">
+                        <img class="pe-2 " src="./assets/images/icon-list.svg" alt="">
+                        Product discovery and building what matters
+                    </h5>
+                    <h5 class="texto2">
+                        <img class="pe-2" src="./assets/images/icon-list.svg" alt="">
+                        Measuring to ensure updates are a success
+                    </h5>
+                    <h5 class="mb-5 texto3">
+                        <img class="pe-2 " src="./assets/images/icon-list.svg" alt="">
+                        And much more!
+                    </h5>
+                    <h5 class="fw-bold email_desktop_dessign">Email adress <span class=" invalid d-none ">Valid email required</span></h5>
+                    <div>
+                        <input class="rounded p-3 input_desktop_dessign" id="input_desktop_dessign" type="text" placeholder="email@company.com">
+                    </div>
+                    <div>
+                        <button class=" rounded  mt-4 p-3 boton_desktop">Subscribe to monthly newsletter</button>
+                    </div>
+                </div>
+               <div>
+                <img class="me-3 mt-3" src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+               </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</section>
+<!-- desktop success -->
+<section class="vh-100 w-100 desktop_success d-none ">
+  <div class="vh-100 w-100 card d-flex  justify-content-center mobile_success_container " id="mobile_success_container">
+      <div class=" w-25 d-flex bg-white me-auto ms-auto card_cuerpo flex-column modal_2" >
+          <h1 class=" w-25 d-flex ms-5 mt-5 icon mb-4">
+              <img src="./assets/images/icon-list.svg" alt="">
+          </h1>
+          <h1 class="ms-5 subscribe fw-bold ">
+              Thanks for subscribing!
+          </h1>
+          <p class="ms-5 mb-4 p_desktop_success"> A confirmation email has been sent to <span
+                  class="fw-bold" id="correo_success"></span>
+              Please open it and click <br> the button inside to confirm your subscription.</p>
+          <div class=" w-100 d-flex flex-column">
+              <button class=" ms-5 me-5  rounded fw-light fs-6 boton_desktop_success">Dismiss message</button>
+          </div>
+      </div>
+  </div>
+</section>
+  </main>
+
+  <!-- Sign-up form start ash@loremcompany.com.-->
+
+
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+
+  <!--  Thanks for subscribing!
+
+  A confirmation email has been sent to ash@loremcompany.com.
+  Please open it and click the button inside to confirm your subscription.
+-->
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
